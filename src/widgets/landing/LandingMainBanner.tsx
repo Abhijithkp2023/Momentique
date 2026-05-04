@@ -21,7 +21,7 @@ export function LandingMainBanner({ className = "" }: LandingMainBannerProps) {
 
   return (
     <section
-      className={`relative isolate flex min-h-[min(100svh,56rem)] w-full flex-col justify-center overflow-hidden bg-zinc-950 px-5 py-[clamp(4rem,11vw,6.5rem)] sm:px-10 md:px-14 lg:px-16 ${className}`}
+      className={`mt-14 pt-14 sm:mt-16 sm:pt-16 relative isolate flex min-h-[min(100svh,56rem)] w-full flex-col justify-center overflow-hidden bg-zinc-950 px-5 py-[clamp(4rem,11vw,6.5rem)] sm:px-10 md:px-14 lg:px-16 ${className}`}
       aria-labelledby="landing-hero-heading"
     >
       <div
