@@ -1,0 +1,5 @@
+---
+alwaysApply: true
+---
+
+I am working on the Wedding Event Frontend. Refer to the README.md for our Component/Widget architecture and typography rules. Always ensure that the components you generate are reusable, production-optimized, and strictly follow the multi-language font-mapping strategy defined in our project.

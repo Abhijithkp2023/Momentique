@@ -1,1 +1,49 @@
 @import "tailwindcss";
+
+@keyframes wedora-banner-drift {
+  0% {
+    transform: scale(1.035) translate(0%, 0%);
+  }
+  50% {
+    transform: scale(1.08) translate(-1%, 1.1%);
+  }
+  100% {
+    transform: scale(1.055) translate(0.4%, -0.6%);
+  }
+}
+
+@keyframes wedora-scroll-float {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translateY(9px);
+    opacity: 1;
+  }
+}
+
+@keyframes wedora-scroll-ball {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  55% {
+    transform: translateY(12px);
+    opacity: 1;
+  }
+}
+
+.wedora-banner-drift {
+  animation: wedora-banner-drift 44s ease-in-out infinite alternate;
+}
+
+.wedora-scroll-hint {
+  animation: wedora-scroll-float 2.35s ease-in-out infinite;
+}
+
+.wedora-banner-scroll-ball {
+  animation: wedora-scroll-ball 2s ease-in-out infinite;
+}
