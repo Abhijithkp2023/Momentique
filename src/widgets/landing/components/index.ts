@@ -6,4 +6,8 @@ export {
   LandingHeroPreviewCard,
   type LandingHeroPreviewCardProps,
 } from "./LandingHeroPreviewCard";
+export {
+  LandingHeroPhoneMockup,
+  type LandingHeroPhoneMockupProps,
+} from "./LandingHeroPhoneMockup";
 export { landingHeadingFontClass, landingBodyFontClass } from "./landingHeroTokens";

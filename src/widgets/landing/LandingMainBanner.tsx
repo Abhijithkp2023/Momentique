@@ -9,7 +9,7 @@ import {
   LandingHeroCta,
   LandingHeroEyebrow,
   LandingHeroHighlights,
-  LandingHeroPreviewCard,
+  LandingHeroPhoneMockup,
 } from "./components";
 
 export type LandingMainBannerProps = {
@@ -107,12 +107,9 @@ export function LandingMainBanner({ className = "" }: LandingMainBannerProps) {
 
         <div
           {...landingAosAttrs("zoom-in", { duration: 950, delay: 200 })}
-          className="relative mx-auto mt-6 w-full max-w-md md:max-w-lg sm:mt-0 lg:mx-0"
+          className="relative mx-auto mt-6 flex w-full justify-center md:max-w-none sm:mt-0 lg:mx-0 lg:justify-end"
         >
-          <LandingHeroPreviewCard
-            imageSrc={c.media.imageSrc}
-            imageAlt={c.media.imageAlt}
-          />
+          <LandingHeroPhoneMockup previewSrc="/preview/save-the-date" />
         </div>
       </div>
     </section>

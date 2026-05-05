@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans, Playfair_Display } from "next/font/google";
 import { AOSProvider } from "@/src/components/providers/AOSProvider";
-import { SiteHeader } from "@/src/components/SiteHeader";
 import "./globals.css";
 
 const playfairHeading = Playfair_Display({
@@ -28,10 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfairHeading.variable} ${dmSansBody.variable}`}>
       <body className="antialiased">
-        <AOSProvider>
-          <SiteHeader />
-          {children}
-        </AOSProvider>
+        <AOSProvider>{children}</AOSProvider>
       </body>
     </html>
   );
